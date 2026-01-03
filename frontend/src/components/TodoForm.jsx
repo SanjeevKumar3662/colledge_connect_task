@@ -56,7 +56,7 @@ export const TodoForm = ({ setTodos }) => {
   };
 
   return (
-    <div className="max-w-2xl mx-auto my-6 rounded-2xl border border-purple-500/30 bg-gradient-to-br from-zinc-900 via-zinc-900 to-purple-900/30 p-6 shadow-lg shadow-purple-500/10">
+    <div className="max-w-2xl mx-auto my-6 rounded-2xl border border-purple-500/30 bg-linear-to-br from-zinc-900 via-zinc-900 to-purple-900/30 p-6 shadow-lg shadow-purple-500/10">
       <h1 className="mb-4 text-xl font-semibold text-slate-100">Create Task</h1>
 
       <form onSubmit={onSubmitTask} className="space-y-4">

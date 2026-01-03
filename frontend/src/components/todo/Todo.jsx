@@ -56,7 +56,7 @@ const Todo = ({
 
   return (
     <>
-      <div className="w-full m-4 p-6  border border-purple-500/30 bg-linear-to-br from-zinc-900 via-zinc-900 to-purple-900/30 shadow-lg shadow-purple-500/10 ">
+      <div className="w-full  p-6  border border-purple-500/30 bg-linear-to-br from-zinc-900 via-zinc-900 to-purple-900/30 shadow-lg shadow-purple-500/10 ">
         {/* HEADER */}
 
         <div className="flex items-center justify-between gap-3">
