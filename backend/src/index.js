@@ -6,6 +6,7 @@ import express from "express";
 
 import { errorHandler } from "./utils/errorHandler.js";
 import { connectDB } from "./db/db.js";
+import taskRouter from "./route/task.route.js";
 
 const app = express();
 
@@ -13,6 +14,8 @@ app.use(cors({ origin: ["http://localhost:5173"] }));
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(errorHandler);
+
+app.use("/api/v1", taskRouter);
 
 app.get("/", (req, res) => {
   res.send(`<h1>hi this is a test</h1>`);
