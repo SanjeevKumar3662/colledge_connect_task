@@ -11,7 +11,7 @@ const taskRouter = Router();
 
 taskRouter.post("/task", asyncHandler(createTask));
 taskRouter.get("/task", asyncHandler(getAllTask));
-taskRouter.put("/task", asyncHandler(updateTask));
-taskRouter.delete("/task", asyncHandler(deleteTask));
+taskRouter.put("/task/:id", asyncHandler(updateTask));
+taskRouter.delete("/task/:id", asyncHandler(deleteTask));
 
 export default taskRouter;
