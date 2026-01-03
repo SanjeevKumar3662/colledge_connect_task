@@ -20,7 +20,7 @@ function App() {
             path="/"
             element={
               <div className="main">
-                <TodoForm todos={todos} setTodos={setTodos} />
+                {/* <TodoForm todos={todos} setTodos={setTodos} /> */}
                 <Todos todos={todos} setTodos={setTodos} />
               </div>
             }
