@@ -14,6 +14,17 @@ export const createTask = async (req, res) => {
     throw new ApiError(400, "All fields are required");
   }
 
+  const isTaskDuplicate = await Task.findOne({
+    title,
+    description,
+    priority,
+    dueDate,
+    status,
+  });
+  if (isTaskDuplicate) {
+    throw new ApiError(500, "Can not create duplicate tasks");
+  }
+
   const task = await Task.create({
     title,
     description,

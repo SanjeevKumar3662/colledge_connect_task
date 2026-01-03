@@ -7,11 +7,11 @@ import {
   updateTask,
 } from "../controller/task.controller.js";
 
-const router = Router();
+const taskRouter = Router();
 
-router.post("/task", asyncHandler(createTask));
-router.get("/task", asyncHandler(getAllTask));
-router.put("/task", asyncHandler(updateTask));
-router.delete("/task", asyncHandler(deleteTask));
+taskRouter.post("/task", asyncHandler(createTask));
+taskRouter.get("/task", asyncHandler(getAllTask));
+taskRouter.put("/task", asyncHandler(updateTask));
+taskRouter.delete("/task", asyncHandler(deleteTask));
 
 export default taskRouter;
